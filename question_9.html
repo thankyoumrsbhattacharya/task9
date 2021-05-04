@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="//img.icons8.com/ios/50/000000/search--v3.png"/>
+    <style>
+        body, html{
+            margin: 0;
+            padding: 50px;
+            height: 100%;
+            background: url('https://wallpaperaccess.com/full/1267759.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+        div{
+            opacity: 100;
+        }
+        #alertExample{
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron header">
+        <h1 class="display-4">Task 9</h1>
+        <h3 class="lead">This tiny part of the respiratory system is where the 3 Os and a C meet up</h3>
+        <hr class="my-4">
+        <div class="answerPart">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-dark text-white " id="basic-addon1">Answer</span>
+                </div>
+                <input type="text" id="numberInput" class="form-control" placeholder="*******">
+            </div>
+            <button onclick="check()" class="btn btn-dark">Submit</button>
+
+            <div class="alert alert-warning invisible mt-4" role="alert" id="alertExample" >
+                Lets try again! 
+            </div>
+        
+            </div>
+        
+      </div>
+
+
+      
+    <script>
+        var alert1 = document.getElementById('alertExample')
+        alert1.visible=false;
+
+        function check(){
+            var number = document.getElementById('numberInput').value;
+            if (number=='alveoli'){
+                window.open('https://thankyoumrsbhattacharya.github.io/task10');
+                alert1.innerHTML= 'Well Done!! Continue!';
+                alert1.classList.add("alert-success");
+                alert1.classList.remove("alert-warning");
+                alert1.classList.remove("invisible");
+
+            }
+            else{
+                alert1.classList.remove("invisible");
+            }
+        }
+    </script>
+
+</body>
+</html>
